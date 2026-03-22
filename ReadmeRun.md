@@ -5,6 +5,17 @@ To crete a new application
   Run instructions for Android:
     • Have an Android emulator running (quickest way to get started), or a device connected.
     • cd "/Users/deepanshu.narang/Documents/react_native_bare" && npx react-native run-android
+
+  if running an existing project
+  creare a local.properties inside android (folder)
+  nano ~/.zshrc
+  Add these lines at the bottom:
+  bashexport JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
+  export ANDROID_HOME=$HOME/Library/Android/sdk
+  export PATH=$PATH:$ANDROID_HOME/emulator
+  export PATH=$PATH:$ANDROID_HOME/platform-tools
+  Save with Ctrl+O → Enter → Ctrl+X, then reload:
+  bashsource ~/.zshrc
   
   Run instructions for iOS:
     • cd "/Users/deepanshu.narang/Documents/react_native_bare/ios"
